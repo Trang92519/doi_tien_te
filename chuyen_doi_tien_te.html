@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table style="text-align: center">
+    <tr style="color: blue">
+        <th>Amount</th>
+        <th >From Currency</th>
+        <th>To Currency</th>
+    </tr>
+    <tr>
+        <td><input type="number" id="ip" onchange="convert()" min="1"></td>
+        <td>
+            <select id="from">
+                <option value="1">USD</option>
+                <option value="23000">VND</option>
+            </select>
+        </td>
+        <td>
+            <select id="to">
+                <option value="23000">VND</option>
+                <option value="1">USD</option>
+            </select>
+        </td>
+    </tr>
+        <tr>
+           <td> <button onclick="convert()">Convert</button></td>
+           <td><p style="color: red" id="rs">Result</p></td>
+        </tr>
+
+</table>
+<script src="chuyen_doi_tien_te.js"></script>
+
+
+
+</body>
+</html>
